@@ -1,0 +1,110 @@
+site_name: デザイナー・カリキュラム 2026
+site_description: 世界トップデザインスクールに学ぶ次世代デザイン教育カリキュラム
+site_author: Design Curriculum Project
+repo_url: https://github.com/hide-nu/designer-curriculum
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切替
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切替
+  features:
+    - content.code.copy
+    - navigation.expand
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - toc.follow
+  font:
+    text: Noto Sans JP
+    code: Roboto Mono
+  language: ja
+
+plugins:
+  - search:
+      lang: ja
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - ホーム: index.md
+  - カリキュラム概要: curriculum-overview.md
+  - Book 1 - デザイン思考の基礎:
+    - 概要: books/01-design-thinking/index.md
+    - 第1章 デザインとは何か: books/01-design-thinking/ch01-what-is-design.md
+    - 第2章 デザインの歴史と進化: books/01-design-thinking/ch02-history-of-design.md
+    - 第3章 人間中心設計: books/01-design-thinking/ch03-human-centered-design.md
+    - 第4章 デザインリサーチ手法: books/01-design-thinking/ch04-design-research.md
+    - 第5章 ビジュアルコミュニケーション: books/01-design-thinking/ch05-visual-communication.md
+  - Book 2 - デザイン・フューチャーズ:
+    - 概要: books/02-design-futures/index.md
+    - 第1章 未来学入門: books/02-design-futures/ch01-intro-futures.md
+    - 第2章 STEEPV分析: books/02-design-futures/ch02-steepv-analysis.md
+    - 第3章 シナリオプランニング: books/02-design-futures/ch03-scenario-planning.md
+    - 第4章 デザインフィクション: books/02-design-futures/ch04-design-fiction.md
+    - 第5章 スペキュラティブデザイン: books/02-design-futures/ch05-speculative-design.md
+  - Book 3 - 社会変革デザイン:
+    - 概要: books/03-social-transformation/index.md
+    - 第1章 包摂的デザイン: books/03-social-transformation/ch01-inclusive-design.md
+    - 第2章 都市生態学: books/03-social-transformation/ch02-urban-ecologies.md
+    - 第3章 参加型デザイン: books/03-social-transformation/ch03-participatory-design.md
+    - 第4章 システム思考と社会課題: books/03-social-transformation/ch04-systems-thinking.md
+    - 第5章 デザインと公共政策: books/03-social-transformation/ch05-design-policy.md
+  - Book 4 - クリティカル・メイキング:
+    - 概要: books/04-critical-making/index.md
+    - 第1章 素材とクラフトマンシップ: books/04-critical-making/ch01-materials-craft.md
+    - 第2章 フィジカルコンピューティング: books/04-critical-making/ch02-physical-computing.md
+    - 第3章 デジタルファブリケーション: books/04-critical-making/ch03-digital-fabrication.md
+    - 第4章 生成AIと制作: books/04-critical-making/ch04-generative-ai-making.md
+    - 第5章 物質性とデジタルの融合: books/04-critical-making/ch05-material-digital-fusion.md
+  - Book 5 - AIパートナーシップデザイン:
+    - 概要: books/05-ai-partnership/index.md
+    - 第1章 生成AI入門: books/05-ai-partnership/ch01-intro-generative-ai.md
+    - 第2章 プロンプトエンジニアリング: books/05-ai-partnership/ch02-prompt-engineering.md
+    - 第3章 AIプロトタイピング: books/05-ai-partnership/ch03-ai-prototyping.md
+    - 第4章 Human-AI協働デザイン: books/05-ai-partnership/ch04-human-ai-collaboration.md
+    - 第5章 AIの倫理とバイアス: books/05-ai-partnership/ch05-ai-ethics-bias.md
+  - Book 6 - サステナブルデザイン:
+    - 概要: books/06-sustainable-design/index.md
+    - 第1章 サーキュラーエコノミー入門: books/06-sustainable-design/ch01-circular-economy.md
+    - 第2章 ライフサイクルアセスメント: books/06-sustainable-design/ch02-lifecycle-assessment.md
+    - 第3章 バイオデザイン: books/06-sustainable-design/ch03-bio-design.md
+    - 第4章 サステナブル素材: books/06-sustainable-design/ch04-sustainable-materials.md
+    - 第5章 リジェネラティブデザイン: books/06-sustainable-design/ch05-regenerative-design.md
+  - Book 7 - デザイン戦略とリーダーシップ:
+    - 概要: books/07-design-strategy/index.md
+    - 第1章 デザイン経営: books/07-design-strategy/ch01-design-management.md
+    - 第2章 サービスデザイン: books/07-design-strategy/ch02-service-design.md
+    - 第3章 トランジションデザイン: books/07-design-strategy/ch03-transition-design.md
+    - 第4章 デザイン組織論: books/07-design-strategy/ch04-design-organizations.md
+    - 第5章 ポートフォリオと実践: books/07-design-strategy/ch05-portfolio-practice.md
+  - 学習グラフ: learning-graph/index.md
+  - 用語集: glossary.md
+  - 参考文献: references.md
